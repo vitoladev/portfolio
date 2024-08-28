@@ -113,6 +113,18 @@ export default function Home() {
               className="w-24 h-24"
             />
           </li>
+          <li
+            key="AWS Solutions Architect Associate"
+            className="border border-gray-300 p-4"
+          >
+            <Image
+              src="/images/aws-solutions-architect-associate.png"
+              alt="AWS Solutions Architect Associate"
+              width={40}
+              height={40}
+              className="w-24 h-24"
+            />
+          </li>
         </ul>
       </section>
       <footer className="flex flex-col items-center bg-purple-600">

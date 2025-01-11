@@ -5,42 +5,44 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="text-3xl font-bold">Victor Oliveira</h1>
-      <section className="flex flex-col items-center">
-        <p className="text-md p-1 m-2">
-          Desenvolvedor Full Stack com foco na criação de soluções para cloud,
-          aplicações web e aplicativos mobile.
-        </p>
-        <br />
-        <h2 className="text-xl font-semibold mb-5">
-          Principais Tecnologias Utilizadas
-        </h2>
-        <ul title="Tecnologias">
-          <li>Node.js com Fastify e Nest.js (Backend)</li>
-          <li>React/Next.js (Web)</li>
-          <li>React Native (Mobile)</li>
-          <li>AWS/Azure (Cloud)</li>
-          <li>Typescript</li>
-          <li>Mensageria</li>
-          <li>Kubernetes</li>
-          <li>Docker</li>
-          <li>Microsserviços</li>
-          <li>CI/CD</li>
-        </ul>
-        <br />
-        <p className="text-md p-1 m-2">
-          Tenho projetos pessoais desenvolvidos em Python, C# e Golang
-        </p>
-        <br />
-        <p className="text-md p-1 m-2">
-          No momento estou me especializando em Cloud Computing nos ambientes
-          AWS/Azure e infraestrutura como código (IaC) com Terraform e AWS CDK.
-        </p>
-        <br />
+      <section className="flex flex-col items-center p-10">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-md text-center leading-relaxed">
+            Tenho experiência profissional com o desenvolvimento de aplicações
+            web e mobile, com o foco em criar novas funcionalidades e atualizar
+            sistemas que já existem para se encaixarem em metodologias mais
+            modernas.
+          </p>
+          <p className="text-md text-center leading-relaxed">
+            No momento estou me especializando em DevOps, estudando temas como
+            Cloud Computing, IaC e pipelines de CI/CD.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-8">
+          <h2 className="text-2xl font-semibold mb-5 text-center">
+            Tecnologias
+          </h2>
+          <ul className="flex flex-col mx-auto space-y-2" title="Tecnologias">
+            <li>JavaScript/TypeScript</li>
+            <li>Golang</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>React/Next.js (Web)</li>
+            <li>React Native (Mobile)</li>
+            <li>AWS/Azure (Cloud)</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>RabbitMQ/SQS (Mensageria)</li>
+            <li>Kubernetes</li>
+            <li>Docker</li>
+          </ul>
+        </div>
       </section>
 
       <section className="flex flex-col items-center mb-3">
-        <h2 className="text-xl font-semibold mb-2">Projetos</h2>
-        <ul className="flex flex-col space-y-5">
+        <h2 className="text-2xl font-semibold mb-3">Projetos pessoais</h2>
+        <ul className="flex flex-col space-y-6">
           <li>
             <Link
               className="bg-purple-600"
@@ -98,7 +100,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="flex flex-col items-center mb-3">
+      <section className="flex flex-col items-center mb-5">
         <h2 className="text-xl font-semibold mb-2">Certificações</h2>
         <ul className="flex space-x-4">
           <li
@@ -120,6 +122,18 @@ export default function Home() {
             <Image
               src="/images/aws-solutions-architect-associate.png"
               alt="AWS Solutions Architect Associate"
+              width={40}
+              height={40}
+              className="w-24 h-24"
+            />
+          </li>
+          <li
+            key="AWS Developer Associate"
+            className="border border-gray-300 p-4"
+          >
+            <Image
+              src="/images/aws-developer-associate.png"
+              alt="AWS Developer Associate"
               width={40}
               height={40}
               className="w-24 h-24"
